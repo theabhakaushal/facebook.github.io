@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASSIGNMENT3</title>
+	<meta charset="utf-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+<!--style for table-->
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+</style>
+
+
+
+
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="sample1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+                     
+<body class="container" >
+	<div class="container-fluid" style="background-color: lightblue; height: 20px;"></div>
+	<div class="container-fluid" style="background-color: lightblue; height: 20px;"></div>
+
+<!--assigning tabs-->
+
+	<div class=" row" style="padding: 2px">
+		
+		<ul class="nav nav-tabs">
+           <li  class=" col-md-2 col-sm-4 col-xs-4 " role="presentation" style="text-align:center;font-size:1.5vw"><h3><strong>Facebook</strong></h3></li>
+           <li class="col-md-5 col-sm-4 col-xs-4 active " role="presentation" style="text-align: center"><a data-toggle="tab" href="#profile"><h3><strong>User Profile</strong></h3></a></li>
+           <li class="col-md-5 col-sm-4 col-xs-4 " role="presentation" style="text-align: center;"><a data-toggle="tab" href="#feed"><h3><strong> User Feeds</strong></h3></a></li>
+        </ul>
+ 
+    <div class="container-fluid" style="background-color: lightblue; height: 20px;margin: 5px"></div>
+
+     
+     <!--tab contents-->
+
+	    <div class="tab-content">
+    
+
+    <!--first profile tab-->
+
+    <div id="profile" class="tab-pane fade in active" style="text-align: center; border-top-width: 10px;" role="tabpanel">
+    	
+    	<div>
+             <img src="http://www.sabharwalfood.com/Admin/Testimonials/No_Image.jpg" id="myDp" alt="my dp"  width="20" height="20" >
+        </div>
+        	
+        	<hr>
+        
+   	<!--table content-->
+
+        <div class="table-responsive">
+     
+        	 <table class="table">
+     	
+     	   		<tr>
+     				<td><i><h3> Email- </h3></i></td>
+     				<td><h4><span id="myEmail"></span></h4></td>
+     	   		</tr>
+
+     	   		<tr>
+     				<td><i><h3> Profile Url- </h3></i></td>
+     				<td><h4><span id="myProfileId"></span></h4></td>
+     	   		</tr>
+
+     	   		<tr>
+     				<td><i><h3> HomeTown-</h3></i></td>
+     				<td><h4><span id="myHomeTown"></span></h4></td>
+     	   		</tr>
+
+     	   		<tr>
+     				<td><i><h3>  Gender- </h3></i></td>
+     				<td><h4><span id="myGender"></span></h4></td>
+     	   		</tr>
+
+         	</table>
+        </div>
+      
+       <br><br>
+
+  </div>
+
+
+   <!--second feed tab-->
+
+
+
+    <div id="feed" class="tab-pane fade container" style="text-align: center;">
+     	
+  		<div class="row" style="padding: 20px">
+     		
+     		<div class="col-xs-12 col-md-12 col-lg-6">
+        
+      			<img src="http://www.sabharwalfood.com/Admin/Testimonials/No_Image.jpg" id="photo0" alt="my dp"  width="20" height="20">
+       		 </div>
+        
+
+        	<div class="col-xs-12 col-md-12 col-lg-6">
+        	
+         		<div>    
+        			<h4><span id="message0"></span></h4> 
+                    
+        		</div>
+
+        		<div >
+        			
+        			<h4><span id="story0"></span></h4>
+       			
+       			</div>
+        
+        
+        	</div>
+   		</div>
+        <hr>
+
+
+        <div class="row" style="padding: 20px">
+         	 
+         	 <div class="col-xs-12 col-md-5 col-lg-5">
+      			 <img src="http://www.sabharwalfood.com/Admin/Testimonials/No_Image.jpg" id="photo1" alt="my dp"  width="20" height="20">
+        	 </div>
+        
+    		 <div class="col-xs-12 col-md-6 col-lg-6">
+         		 <div>
+         			
+         			<h4><span id="message1"></h4></span> 
+                 
+                 </div>
+        
+
+        	 	 <div >
+        			
+        			<h4> <span id="story1"></h4></span> 
+          		
+          		</div>
+      		 </div>
+        
+         </div>
+         <hr>
+
+		<div class="row" style="padding: 20px">
+        
+        	 <div class="col-xs-12 col-md-5 col-lg-5">
+         		 <img src="http://www.sabharwalfood.com/Admin/Testimonials/No_Image.jpg" id="photo2" alt="my dp"  width="20" height="20">
+       		 </div>
+        
+        	 <div class="col-xs-12 col-md-6 col-lg-6">
+        	 	<div>
+        			<h4><span id="message2"></h4></span> 
+        		</div>
+        
+
+        	 	<div >
+        			<h4><span id="story2"></h4></span> 
+         		</div>
+        	</div>
+        
+   		</div>
+		<hr>
+
+
+  		 <div class="row" style="padding: 20px">
+
+         	 <div class="col-xs-12 col-md-5 col-lg-5"  >
+         		<img src="http://www.sabharwalfood.com/Admin/Testimonials/No_Image.jpg" id="photo3" alt="my dp" width="20" height="20">
+        	</div>
+        
+         	<div class="col-xs-12 col-md-6 col-lg-6">
+        		<div>
+        			<h4><span id="message3"></h4></span> 
+          
+        		</div>
+        
+
+        		<div >
+       				<h4><span id="story3"></h4></span> 
+          
+       			</div>
+        
+
+     		</div>
+
+     	</div>
+        <hr>
+    
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
